@@ -1,0 +1,77 @@
+
+/* *****************************************图片旋转效果***********************************************/
+.xuanzhuan{
+	width:100px;
+	height:100px;
+	background-color:green;
+	transition:width 2s,height 2s,transform 2s;/* 设置宽高。过渡时间两秒， */
+	-moz-transition:width 2s,height 2s,transform 2s;
+}
+div.xuanzhuan:hover{
+	width:200px;/* 宽高变为原来的两倍 */
+	height:50px;
+	transform:rotate(360deg);/* 旋转360度 */
+	-moz-transform:rotate(360deg);
+}
+/* *****************************************图片移动效果**********************************************/
+.yidong{
+	width:100px;
+	height:50px;
+	background-color:green;
+	position:relative;
+	animation:yidong 5s infinite alternate;/* 无限交替执行 */
+	-moz-animation:yidong 5s infinite alternate;
+}
+@keyframes yidong{/* 定义动画 */
+		0%{background:red;left:0px;top:0px;}
+		25%{background:green;left:200px;top:0px;}
+		50%{background:red;left:200px;top:200px;}
+		75%{background:green;left:0px;top:200px;}
+		100%{background:red;left:0px;top:0px;}
+}
+@-moz-keyframes yidong{
+		0%{background:red;left:0px;top:0px;}
+		25%{background:green;left:200px;top:0px;}
+		50%{background:red;left:200px;top:200px;}
+		75%{background:green;left:0px;top:200px;}
+		100%{background:red;left:0px;top:0px;}
+}
+/******************************************垂直导航栏**********************************************/
+/* ul{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+a:link,a:visited{
+	text-decoration:none;
+	display:block;
+	background-color:burlywood;
+	color:aliceblue;
+	text-align:center;
+	width:50px;
+}
+a:active,a:hover{
+	background-color:chartreuse;
+} 
+ */
+/******************************************水平导航栏**********************************************/
+ul{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+a:link,a:visited{
+	text-decoration:none;
+	background-color:burlywood;
+	color:aliceblue;
+	text-align:center;
+	width:50px;
+}
+a:active,a:hover{
+	background-color:chartreuse;
+} 
+li{
+	display:inline;
+}
+
+

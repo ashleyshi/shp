@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+BODY {
+	scrollbar-face-color: buttonface; scrollbar-highlight-color: buttonface; scrollbar-shadow-color: buttonface; scrollbar-3dlight-color: buttonhighlight; scrollbar-arrow-color: #797979; scrollbar-track-color: #EEEEEE; scrollbar-darkshadow-color: buttonshadow
+}
+BODY {
+	FONT: 12px/180% "宋体", Verdana, Arial, Helvetica, sans-serif; word-padding: 4px
+}
+A {
+	FONT: 12px/180% "宋体", Verdana, Arial, Helvetica, sans-serif; word-padding: 4px
+}
+DIV {
+	FONT: 12px/180% "宋体", Verdana, Arial, Helvetica, sans-serif; word-padding: 4px
+}
+SPAN {
+	FONT: 12px/180% "宋体", Verdana, Arial, Helvetica, sans-serif; word-padding: 4px
+}
+TABLE {
+	FONT: 12px/180% "宋体", Verdana, Arial, Helvetica, sans-serif; word-padding: 4px
+}
+TD {
+	FONT: 12px/180% "宋体", Verdana, Arial, Helvetica, sans-serif; word-padding: 4px
+}
+TH {
+	FONT: 12px/180% "宋体", Verdana, Arial, Helvetica, sans-serif; word-padding: 4px
+}
+INPUT {
+	FONT: 12px "宋体", Verdana, Arial, Helvetica, sans-serif
+}
+SELECT {
+	FONT: 12px "宋体", Verdana, Arial, Helvetica, sans-serif
+}
+A.w:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.w:hover {
+	COLOR: #00ff00; TEXT-DECORATION: none
+}
+A.w:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.td1 {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: black 0px solid; BORDER-RIGHT: black 0px solid; BORDER-TOP: #000000 1px solid
+}
+.td2 {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: black 0px solid; BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid
+}
+.table-bottom {
+	BORDER-BOTTOM: #999999 2px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #ffffff 1px solid
+}
+.table-body {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #000000 1px solid; BORDER-TOP: black 0px solid; FONT-FAMILY: "宋体"; FONT-SIZE: 14px; LINE-HEIGHT: 140%
+}
+.text {
+	BACKGROUND-COLOR: buttonhighlight; BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; FONT-SIZE: 12px
+}
+.text_bottom_line {
+	BACKGROUND-COLOR: #f1f1f1; BORDER-BOTTOM: red 1px solid; BORDER-LEFT: #f1f1f1 1px solid; BORDER-RIGHT: #f1f1f1 1px solid; BORDER-TOP: #f1f1f1 1px solid; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.table-button {
+	BORDER-BOTTOM: #333333 2px solid; BORDER-LEFT: #999999 1px solid; BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #eeeeee 2px solid
+}

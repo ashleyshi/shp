@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+   <!--用户登陆配置开始 -->
+  <servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>com.New.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+<!--用户登陆配置结束 -->
+   
+<!-- 用户注册配置开始 -->
+  <servlet>
+	<servlet-name>RegisterServlet</servlet-name>
+	<servlet-class>com.New.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+<!--用户注册配置结束 --> 
+
+<!-- 用户注册检查配置开始 -->
+  <servlet>
+	<servlet-name>CheckRegisterServlet</servlet-name>
+	<servlet-class>com.New.servlet.CheckRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>CheckRegisterServlet</servlet-name>
+		<url-pattern>/CheckRegisterServlet</url-pattern>
+  </servlet-mapping>
+<!--用户注册检查配置结束 --> 
+   
+<!-- 添加数据配置开始 -->
+  <servlet>
+	<servlet-name>AddNewsServlet</servlet-name>
+	<servlet-class>com.New.servlet.AddNewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>AddNewsServlet</servlet-name>
+		<url-pattern>/pages/AddNewsServlet</url-pattern>
+  </servlet-mapping>
+<!-- 添加数据配置结束 -->
+ 
+<!-- 字符处理过滤器配置 开始 -->
+  <filter>
+	<filter-name>filter</filter-name>
+	<filter-class>com.New.filter.EncodeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  		<filter-name>filter</filter-name>
+		<url-pattern>/*</url-pattern>	
+  </filter-mapping> 
+<!-- 字符处理过滤器配置 结束 --> 
+   
+<!-- 显示所有数据配置开始 -->
+  <servlet>
+	<servlet-name>showAllNewsServlet</servlet-name>
+	<servlet-class>com.New.servlet.showAllNewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>showAllNewsServlet</servlet-name>
+		<url-pattern>/showAllNewsServlet</url-pattern>	
+  </servlet-mapping>
+<!-- 显示所有数据配置结束 -->  
+
+<!-- 根据ID查找数据配置开始 -->
+  <servlet>
+	<servlet-name>QueryNewByIdServlet</servlet-name>
+	<servlet-class>com.New.servlet.QueryNewByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>QueryNewByIdServlet</servlet-name>
+		<url-pattern>/QueryNewByIdServlet</url-pattern>	
+  </servlet-mapping>
+<!-- 根据ID查找数据配置结束 -->
+
+<!-- 更新数据配置开始 -->
+   <servlet>
+		<servlet-name>UpdateNewServlet</servlet-name>
+		<servlet-class>com.New.servlet.UpdateNewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>UpdateNewServlet</servlet-name>
+		<url-pattern>/UpdateNewServlet</url-pattern>	
+  </servlet-mapping>
+<!-- 更新数据配置结束 --> 
+
+<!-- 删除数据配置开始 --> 
+  <servlet>
+		<servlet-name>DeleteNewServlet</servlet-name>
+		<servlet-class>com.New.servlet.DeleteNewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>DeleteNewServlet</servlet-name>
+		<url-pattern>/DeleteNewServlet</url-pattern>	
+  </servlet-mapping>
+<!-- 删除数据配置结束 -->  
+
+<!-- 分页显示更新数据配置开始 -->
+  <servlet>
+		<servlet-name>showByPageServlet</servlet-name>
+		<servlet-class>com.New.servlet.showByPageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>showByPageServlet</servlet-name>
+		<url-pattern>/showByPageServlet</url-pattern>	
+  </servlet-mapping>
+ <!-- 分页显示更新数据配置结束 --> 
+ 
+ <!-- 分页显示更多信息配置开始 -->
+  <servlet>
+		<servlet-name>showByPageServletMore</servlet-name>
+		<servlet-class>com.New.servlet.showByPageServletMore</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>showByPageServletMore</servlet-name>
+		<url-pattern>/showByPageServletMore</url-pattern>	
+  </servlet-mapping>
+ <!-- 分页显示更多信息配置结束 --> 
+ 
+<!-- 更新文件配置开始 --> 
+  <servlet>
+    	<servlet-name>UploadHandleServlet</servlet-name>
+    	<servlet-class>com.New.servlet.UploadHandleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    	<servlet-name>UploadHandleServlet</servlet-name>
+   	    <url-pattern>/UploadHandleServlet</url-pattern>
+  </servlet-mapping>
+<!-- 更新文件配置开始 -->  
+
+<!-- 文件列表配置开始 --> 
+  <servlet>
+     	<servlet-name>ListFileServlet</servlet-name>
+    	<servlet-class>com.New.servlet.ListFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     	<servlet-name>ListFileServlet</servlet-name>
+    	<url-pattern>/ListFileServlet</url-pattern>
+  </servlet-mapping>
+<!-- 文件列表配置结束 -->
+
+<!-- 下载文件配置开始 -->
+	<servlet>
+      		<servlet-name>DownLoadServlet</servlet-name>
+      		<servlet-class>com.New.servlet.DownLoadServlet</servlet-class>
+	</servlet> 
+	<servlet-mapping>
+     	   <servlet-name>DownLoadServlet</servlet-name>
+     	   <url-pattern>/DownLoadServlet</url-pattern>
+	</servlet-mapping>
+ <!-- 下载文件配置结束 --> 
+ <!--显示不同组织信息配置开始-->
+  <servlet>
+    <servlet-name>NewsByTypeServlet</servlet-name>
+    <servlet-class>com.New.servlet.NewsByTypeServlet</servlet-class>
+  </servlet>   
+  <servlet-mapping>
+    <servlet-name>NewsByTypeServlet</servlet-name>
+    <url-pattern>/NewsByTypeServlet</url-pattern>
+  </servlet-mapping>  
+<!-- 显示不同组织信息配置结束--> 
+
+ <!--显示文章内容配置开始-->
+  <servlet>
+    <servlet-name>showContent</servlet-name>
+    <servlet-class>com.New.servlet.NewsByTypeTitleServlet</servlet-class>
+  </servlet>   
+  <servlet-mapping>
+    <servlet-name>showContent</servlet-name>
+    <url-pattern>/NewsByTypeTitleServlet</url-pattern>
+  </servlet-mapping>  
+<!-- 显示文章内容配置结束--> 
+
+ <!--BBS撰写帖子配置开始-->
+	 <servlet>  
+   		 <servlet-name>ComposeServlet</servlet-name>  
+   		 <servlet-class>com.BBS.servlet.ComposeServlet</servlet-class>  
+    </servlet>
+    
+     <servlet-mapping>  
+   		 <servlet-name>ComposeServlet</servlet-name>  
+   		 <url-pattern>/ComposeServlet</url-pattern>  
+    </servlet-mapping>
+ <!--BBS撰写帖子配置结束-->
+ 
+  <!--BBS浏览帖子配置开始-->
+	 <servlet>  
+   		 <servlet-name>BrowseServlet</servlet-name>  
+   		 <servlet-class>com.BBS.servlet.BrowseServlet</servlet-class>  
+    </servlet>
+    
+     <servlet-mapping>  
+   		 <servlet-name>BrowseServlet</servlet-name>  
+   		 <url-pattern>/BrowseServlet</url-pattern>  
+    </servlet-mapping>
+ <!--BBS浏览帖子配置结束-->
+ 
+   <!--BBS删除帖子配置开始-->
+	 <servlet>  
+   		 <servlet-name>DeleteServlet</servlet-name>  
+   		 <servlet-class>com.BBS.servlet.DeleteServlet</servlet-class>  
+    </servlet>
+    
+     <servlet-mapping>  
+   		 <servlet-name>DeleteServlet</servlet-name>  
+   		 <url-pattern>/DeleteServlet</url-pattern>  
+    </servlet-mapping>
+ <!--BBS删除帖子配置结束-->
+ 
+ <!--BBS修改帖子配置开始-->
+	 <servlet>  
+   		 <servlet-name>ModifyServlet</servlet-name>  
+   		 <servlet-class>com.BBS.servlet.ModifyServlet</servlet-class>  
+    </servlet>
+    
+     <servlet-mapping>  
+   		 <servlet-name>ModifyServlet</servlet-name>  
+   		 <url-pattern>/ModifyServlet</url-pattern>  
+    </servlet-mapping>
+ <!--BBS修改帖子配置结束-->
+ 
+ <!--BBS阅读帖子配置开始-->
+	 <servlet>  
+   		 <servlet-name>ReadServlet</servlet-name>  
+   		 <servlet-class>com.BBS.servlet.ReadServlet</servlet-class>  
+    </servlet>
+    
+     <servlet-mapping>  
+   		 <servlet-name>ReadServlet</servlet-name>  
+   		 <url-pattern>/ReadServlet</url-pattern>  
+    </servlet-mapping>
+ <!--BBS阅读帖子配置结束-->
+ 
+  <!--BBS回复帖子配置开始-->
+	 <servlet>  
+   		 <servlet-name>ReplyServlet</servlet-name>  
+   		 <servlet-class>com.BBS.servlet.ReplyServlet</servlet-class>  
+    </servlet>
+    
+     <servlet-mapping>  
+   		 <servlet-name>ReplyServlet</servlet-name>  
+   		 <url-pattern>/ReplyServlet</url-pattern>  
+    </servlet-mapping>
+ <!--BBS回复帖子配置结束-->
+ 
+   <!--找回密码配置开始-->
+	 <servlet>  
+   		 <servlet-name>FindPasswordServlet</servlet-name>  
+   		 <servlet-class>com.New.servlet.FindPasswordServlet</servlet-class>  
+    </servlet> 
+     <servlet-mapping>  
+   		 <servlet-name>FindPasswordServlet</servlet-name>  
+   		 <url-pattern>/FindPasswordServlet</url-pattern>  
+    </servlet-mapping>
+ <!--找回密码配置结束-->
+ 
+  <!--管理员配置--> 
+    
+  <!--管理员登陆配置开始-->   
+     <servlet>  
+   		 <servlet-name>MasterLoginServlet</servlet-name>  
+   		 <servlet-class>com.Category.servlet.MasterLoginServlet</servlet-class>  
+    </servlet> 
+     <servlet-mapping>  
+   		 <servlet-name>MasterLoginServlet</servlet-name>  
+   		 <url-pattern>/MasterLoginServlet</url-pattern>  
+    </servlet-mapping>
+  <!--管理员登陆配置结束-->  
+
+ <!--管理员修改栏目配置开始-->   
+     <servlet>  
+   		 <servlet-name>EditCategoryServlet</servlet-name>  
+   		 <servlet-class>com.Category.servlet.EditCategoryServlet</servlet-class>  
+    </servlet> 
+     <servlet-mapping>  
+   		 <servlet-name>EditCategoryServlet</servlet-name>  
+   		 <url-pattern>/EditCategoryServlet</url-pattern>  
+    </servlet-mapping>
+  <!--管理员修改栏目配置结束-->  
+
+<!--管理员添加栏目配置开始-->   
+     <servlet>  
+   		 <servlet-name>AddCategoryServlet</servlet-name>  
+   		 <servlet-class>com.Category.servlet.AddCategoryServlet</servlet-class>  
+    </servlet> 
+     <servlet-mapping>  
+   		 <servlet-name>AddCategoryServlet</servlet-name>  
+   		 <url-pattern>/AddCategoryServlet</url-pattern>  
+    </servlet-mapping>
+  <!--管理员添加栏目配置结束-->  
+  
+  <!--管理员添加栏目配置开始-->   
+     <servlet>  
+   		 <servlet-name>EditMasterServlet</servlet-name>  
+   		 <servlet-class>com.Category.servlet.EditMasterServlet</servlet-class>  
+    </servlet> 
+     <servlet-mapping>  
+   		 <servlet-name>EditMasterServlet</servlet-name>  
+   		 <url-pattern>/EditMasterServlet</url-pattern>  
+    </servlet-mapping>
+  <!--管理员添加栏目配置结束-->
+  
+    <!--注册管理员配置开始-->   
+     <servlet>  
+   		 <servlet-name>MasterRegisterServlet</servlet-name>  
+   		 <servlet-class>com.Category.servlet.MasterRegisterServlet</servlet-class>  
+    </servlet> 
+     <servlet-mapping>  
+   		 <servlet-name>MasterRegisterServlet</servlet-name>  
+   		 <url-pattern>/MasterRegisterServlet</url-pattern>  
+    </servlet-mapping>
+  <!--注册管理员配置结束-->
+
+  <!--管理员找回密码配置开始-->   
+     <servlet>  
+   		 <servlet-name>MasterFindPasswordServlet</servlet-name>  
+   		 <servlet-class>com.Category.servlet.MasterFindPasswordServlet</servlet-class>  
+    </servlet> 
+     <servlet-mapping>  
+   		 <servlet-name>MasterFindPasswordServlet</servlet-name>  
+   		 <url-pattern>/MasterFindPasswordServlet</url-pattern>  
+    </servlet-mapping>
+  <!--管理员找回密码配置结束-->
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
